@@ -1,0 +1,148 @@
+body {
+    background-image: url(https://images.alphacoders.com/278/278051.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #d49d2e;
+}
+
+p {
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    color: #d49d2e;
+    background-color: rgba(14, 13, 13, 0);
+    border: none;
+    font-size: 14px;
+}
+
+.header {
+    height: 30vh;
+    background-color: #000;
+}
+
+.header nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+a {
+    position: relative;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #d49d2e;  
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.header .menu li {
+    transition: all 0.5s ease-in-out;
+}
+
+.header .menu li:hover {
+    transform: translateY(-10px);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main .indice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .indice ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.main .indice .indice-visible {
+    display: flex;
+}
+
+.main .indice ul li{
+    list-style-type: disc;
+}
+
+.main .main-section {
+    background: rgba(0, 0, 0, 0.795);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main-tier {
+    background: rgba(0, 0, 0, 0.795)
+}
+
+.main-tier .section-tier {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-tier .section-tier div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-tier .section-tier a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main-tier .refer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.main-tier .refer div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
