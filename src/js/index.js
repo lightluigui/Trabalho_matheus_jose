@@ -94,3 +94,22 @@ document.querySelectorAll('.button').forEach(element => {
         }
     })
 })
+
+const hamburguer = document.querySelector('#menu-bar')
+const menu = document.querySelector('.menu')
+const body = document.querySelector('#body')
+
+body.addEventListener('click', () => {
+    if(hamburguer.contains(event.target)){
+        menu.classList.toggle('change-btn')
+        document.querySelector('#bar1').classList.toggle('bar1-x')
+        document.querySelector('#bar2').classList.toggle('bar2-x')
+        document.querySelector('#bar3').classList.toggle('bar3-x')
+        
+    }else{
+        menu.classList.remove('change-btn')
+        document.querySelector('#bar1').classList.remove('bar1-x')
+        document.querySelector('#bar2').classList.remove('bar2-x')
+        document.querySelector('#bar3').classList.remove('bar3-x')
+    }
+})

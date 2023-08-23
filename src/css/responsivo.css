@@ -1,0 +1,124 @@
+@media (max-width: 992px) {
+    .header .menu li {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        display: flex;
+        align-items: center;
+    }
+
+    .header nav {
+        align-items: center;
+    }
+
+    .header nav img {
+        height: 50%;
+    }
+
+    .header .menu {
+        visibility: hidden;
+        overflow: hidden;
+        animation: close 0.5s;
+    }
+
+    @keyframes close { 
+        0%{
+            width: 100%;
+        }100%{
+            width: 0;
+        }
+    }
+    
+    .header .menu li {
+        padding: 10px 10px;
+    }
+
+    .header #menu-bar{
+        display: block;
+        width: 45px;
+        z-index: 2;
+    }
+
+    .header #menu-bar .bar{
+        height: 5px;
+        width: 45px;
+        background-color: #fff;
+        display: block;
+        border-radius: 5px;
+        transition: .6s;
+    }
+
+    .header #menu-bar .bar.bar1{
+        transform: translateY(-8px);
+    }
+
+    .header #menu-bar .bar.bar3{
+        transform: translateY(8px);
+    }
+
+    .header #menu-bar .bar.bar1-x{
+        transform: translateY(6px);
+        rotate: -45deg;
+    }
+
+    .header #menu-bar .bar.bar2-x{
+        opacity: 0;
+    }
+
+    .header #menu-bar .bar.bar3-x{
+        transform: translateY(-6px);
+        rotate: 45deg;
+    }
+
+    .header .change-btn{
+        visibility: visible;
+        overflow-x: hidden;
+        animation: open 0.5s;
+    }
+
+    @keyframes open { 
+        0%{
+            width: 0%;
+        }100%{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .header .menu {
+        flex-wrap: wrap;
+        border-radius: 10px;
+    }
+
+    .main-tier .section-tier {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        justify-content: space-around;
+    }
+
+    @keyframes id {
+        0% {
+            padding: 10px 0;
+        }100%{
+            padding: 10px 10px;
+        }
+    }
+
+    .main .indice .indice-visible li:hover div {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header #menu-bar .bar {
+        width: 100%;
+    }
+}

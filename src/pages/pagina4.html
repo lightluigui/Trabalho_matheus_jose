@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/responsivo.css">
 </head>
 
-<body>
+<body id="body">
     <header class="header">
         <nav>
             <img src="../imagens/foguera-removebg-preview.jpg" alt="logo de fogueira">
@@ -19,17 +19,22 @@
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="pagina2.html">Tier 1</a></li>
                 <li><a href="pagina3.html">Tier 2</a></li>
-                <li><a href="pagina4.html">Tier 3</a></li>
+                <li class="menu-ativo"><a href="pagina4.html">Tier 3</a></li>
                 <li><a href="pagina5.html">Tier 4</a></li>
                 <li><a href="pagina6.html">Tier 5</a></li>
                 <li><a href="pagina7.html">Tier 6</a></li>
                 <li><a href="pagina8.html">Sobre</a></li>
             </ul>
         </nav>
+        <div id="menu-bar">
+            <div id="bar1" class="bar bar1"></div>
+            <div id="bar2" class="bar bar2"></div>
+            <div id="bar3" class="bar bar3"></div>
+        </div>
     </header>
 
     <main class="main-tier">
-        <section class="section-tier">
+        <section class="section-tier" id="yhorm">
             <div>
                 <img class="image 5" src="../imagens/yhorm.jpg"></img>
             </div>
@@ -64,7 +69,7 @@
             </div>
         </section>
 
-        <section class="section-tier">
+        <section class="section-tier" id="abyss">
             <div>
                 <img class="image 6" src="../imagens/abyss.jpg"></img>
             </div>

@@ -26,6 +26,7 @@ p {
 
 .header {
     height: 30vh;
+    padding: 10px;
     background-color: #000;
 }
 
@@ -33,13 +34,12 @@ p {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
 }
+
 
 .header .menu {
     display: flex;
     align-items: center;
-    gap: 30px;
     font-size: 20px;
 }
 
@@ -69,11 +69,25 @@ a:hover:before {
 }
 
 .header .menu li {
+    padding: 10px 20px;
+    border-radius: 10px;
     transition: all 0.5s ease-in-out;
 }
 
 .header .menu li:hover {
     transform: translateY(-10px);
+}
+
+.header .menu .menu-ativo {
+    background-color: #fff;
+}
+
+.header .menu .menu-ativo a {
+    color: #000;
+}
+
+.header #menu-bar {
+    display: none;
 }
 
 .main {
@@ -98,8 +112,52 @@ a:hover:before {
     display: flex;
 }
 
-.main .indice ul li{
+.main .indice .indice-visible li{
     list-style-type: disc;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .indice .indice-visible li div {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    visibility: hidden;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: id 0.4s;
+    transition: 0.4s all;
+}
+
+@keyframes id {
+    0% {
+        padding: 10px 0;
+    }100%{
+        padding: 10px 50px;
+    }
+}
+
+.main .indice .indice-visible li div a {
+    color: #000;
+}
+
+.main .indice .indice-visible li:not(:first-child) div {
+    top: -20px;
+}
+
+.main .indice .indice-visible li:last-child div {
+    top: -40px;
+}
+
+.main .indice .indice-visible li:hover div {
+    padding: 10px 50px;
+    visibility: visible;
 }
 
 .main .main-section {
@@ -108,8 +166,11 @@ a:hover:before {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
-    padding: 20px;
     gap: 20px;
+}
+
+.main .main-section img {
+    max-width: 90%;
 }
 
 .main-tier {
@@ -139,6 +200,7 @@ a:hover:before {
     flex-direction: column;
     gap: 10px;
     font-size: 18px;
+    padding: 10px;
 }
 
 .main-tier .refer div:first-child {

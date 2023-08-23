@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="../css/responsivo.css">
 </head>
 
-<body>
+<body id="body">
     <header class="header">
         <nav>
             <img src="../imagens/foguera-removebg-preview.jpg" alt="logo de fogueira">
             <ul class="menu">
                 <li><a href="../../index.html">Home</a></li>
-                <li><a href="pagina2.html">Tier 1</a></li>
+                <li class="menu-ativo"><a href="pagina2.html">Tier 1</a></li>
                 <li><a href="pagina3.html">Tier 2</a></li>
                 <li><a href="pagina4.html">Tier 3</a></li>
                 <li><a href="pagina5.html">Tier 4</a></li>
@@ -26,10 +26,15 @@
                 <li><a href="pagina8.html">Sobre</a></li>
             </ul>
         </nav>
+        <div id="menu-bar">
+            <div id="bar1" class="bar bar1"></div>
+            <div id="bar2" class="bar bar2"></div>
+            <div id="bar3" class="bar bar3"></div>
+        </div>
     </header>
 
     <main class="main-tier">
-        <section class="section-tier">
+        <section class="section-tier" id="gundyr">
             <div>
                 <img class="image 1" src="../imagens/gundao.jpg"></img>
             </div>
@@ -61,12 +66,12 @@
             </div>
         </section>
 
-        <section class="section-tier">
+        <section class="section-tier"  id="namless">
             <div>
                 <img class="image 2" src="../imagens/namless.jpg"></img>
             </div>
             <div>
-                <button class="button 2"><h1>2º Nameless King</h1></button>
+                <button class="button 2"><h1>2º Namless King</h1></button>
                 <p>
                     O Rei Sem Nome é um chefe humanoide de armadura que fica em cima de um dragonete.
                     Durante sua primeira fase, onde ele esta em cima do dragonete ele tem o nome de "O Rei da

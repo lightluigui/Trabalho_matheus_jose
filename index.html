@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="./src/css/responsivo.css">
 </head>
 
-<body>
+<body id="body">
     <header class="header">
         <nav>
             <img src="./src/imagens/foguera-removebg-preview.jpg" alt="logo de fogueira">
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
+                <li class="menu-ativo"><a href="index.html">Home</a></li>
                 <li><a href="./src/pages/pagina2.html">Tier 1</a></li>
                 <li><a href="./src/pages/pagina3.html">Tier 2</a></li>
                 <li><a href="./src/pages/pagina4.html">Tier 3</a></li>
@@ -26,6 +26,11 @@
                 <li><a href="./src/pages/pagina8.html">Sobre</a></li>
             </ul>
         </nav>
+        <div id="menu-bar">
+            <div id="bar1" class="bar bar1"></div>
+            <div id="bar2" class="bar bar2"></div>
+            <div id="bar3" class="bar bar3"></div>
+        </div>
     </header>
 
     <main class="main">
@@ -40,17 +45,57 @@
             <div class="indice">
                 <h1>indice</h1>
                 <ul class="indice-visible">
-                    <li>Home</li>
-                    <li>Tier 1</li>
-                    <li>Tier 2</li>
-                    <li>Tier 3</li>
-                    <li>Tier 4</li>
-                    <li>Tier 5</li>
-                    <li>Tier 6</li>
-                    <li>Sobre</li>
+                    <li>Home 
+                        <div>
+                            <a href="#instructions">Instruções</a>
+                        </div>
+                    </li>
+                    <li>Tier 1
+                        <div>
+                            <a href="./src/pages/pagina2.html#gundyr">Gundyr</a>
+                            <a href="./src/pages/pagina2.html#namless">Namless</a>
+                        </div>
+                    </li>
+                    <li>Tier 2
+                        <div>
+                            <a href="./src/pages/pagina3.html#sif">Sif</a>
+                            <a href="./src/pages/pagina3.html#soul-of-cinder">Soul_of_Cinder</a>
+                        </div>
+                    </li>
+                    <li>Tier 3
+                        <div>
+                            <a href="./src/pages/pagina4.html#yhorm">Yhorm</a>
+                            <a href="./src/pages/pagina4.html#abyss">Abyss_Watchers</a>
+                        </div>
+                    </li>
+                    <li>Tier 4
+                        <div>
+                            <a href="./src/pages/pagina5.html#ancient-dragon">Ancient_Dragon</a>
+                            <a href="./src/pages/pagina5.html#four-kings">Four_Kings</a>
+                        </div>
+                    </li>
+                    <li>Tier 5
+                        <div>
+                            <a href="./src/pages/pagina6.html#gael">Gael</a>
+                            <a href="./src/pages/pagina6.html#gwyn">Gwyn</a>
+                        </div>
+                    </li>
+                    <li>Tier 6
+                        <div>
+                            <a href="./src/pages/pagina7.html#nito">Nito</a>
+                            <a href="./src/pages/pagina7.html#pontfice">Pontfice</a>
+                        </div>
+                    </li>
+                    <li>Sobre
+                        <div>
+                            <a href="./src/pages/pagina8.html#matheus">Matheus</a>
+                            <a href="./src/pages/pagina8.html#jose-eduardo">José_Eduardo</a>
+                            <a href="./src/pages/pagina8.html#refer">Referências</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <p>
+            <p id="instructions">
                 Para seguir para as proximas paginas, utilize o menu no topo da pagina
                 clicando nos botoes que te levarão para pagina designada. <br>
                 Dark Souls se passa no reino fictício de Lordran,
